@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-border-bottom::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  width: 94%;
+  height: 1px;
+  /* Adjust thickness of the bottom border */
+  background: linear-gradient(to right, rgb(0, 0, 0, 0.2) 35%, rgb(0, 0, 0, 1) 30%, rgb(0, 0, 0, 0.2) 35%);
+}
+
+body{
+  overflow-x: hidden;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and Opera */
+}
+
+.bg-login-bg {
+  background-image: url('src/assets/login/loginBg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat:repeat-y;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* For Firefox */
+}
